@@ -6,7 +6,7 @@ meta: this is elephant metadata
 ---
 
 <div class="section">
-  <h1>HEADINGS</h1>
+  <h1 class="section-title">HEADINGS</h1>
 
   <h1>h1. This is an h1</h1>
   <h2>h2. This is an h2</h2>
@@ -16,22 +16,44 @@ meta: this is elephant metadata
   <h6>h6. This is an h6</h6>
 </div>
 
+<div class="view-code">
+<a class="view-code-link">View Code</a>
+{% highlight html %}
+<h1>h1. This is an h1</h1>
+<h2>h2. This is an h2</h2>
+<h3>h3. This is an h3</h3>
+<h4>h4. This is an h4</h4>
+<h5>h5. This is an h5</h5>
+<h6>h6. This is an h6</h6>
+{% endhighlight %}
+
+</div>
+
 <hr>
 
 <div class="section">
-  <h1>BODY TEXT</h1>
+  <h1 class="section-title">BODY TEXT</h1>
 
   <p>This is a paragraph. It has margin-bottom by default.</p>
 
   <p>This is also a paragraph with additional text from <a href="http://www.rikeripsum.com/#!/" target='blank'>Riker Ipsum</a>. Travel time to the nearest starbase? Worf, It's better than music. It's jazz. Maybe we better talk out here; the observation lounge has turned into a swamp. I will obey your orders. I will serve this ship as First Officer. And in an attack against the Enterprise, I will die with this crew. But I will not break my oath of loyalty to Starfleet. Damage report! I think you've let your personal feelings cloud your judgement. What's a knock-out like you doing in a computer-generated gin joint like this?</p>
 
   <span>Span paragraph with no margin-bottom. It is wrapped in a span tag rather than a p tag. It is an inline element which means it will butt up against other inline elements. <a href="https://jsfiddle.net/1khmmkg9/" target='blank'>Block vs Inline Example</a></span>
+
+<div class="view-code">
+<a class="view-code-link">View Code</a>
+{% highlight html %}
+<p>This is a paragraph in a p tag.</p>
+
+<span>Paragraph in a span tag.</span>
+{% endhighlight %}
+
 </div>
 
 <hr>
 
 <div class="section">
-  <h1>LISTS</h1>
+  <h1 class="section-title">LISTS</h1>
 
   <h3>Unordered List</h3>
   <ul>
@@ -59,14 +81,66 @@ meta: this is elephant metadata
     <li>list item 2</li>
     <li>list item 3</li>
   </ol>
+
+<div class="view-code">
+<a class="view-code-link">View Code</a>
+{% highlight html %}
+Unordered List
+<ul>
+  <li>list item 1</li>
+  <li>list item 2</li>
+  <li>list item 3</li>
+</ul>
+
+Ordered List
+<ol>
+  <li>list item 1</li>
+  <li>list item 2</li>
+  <li>list item 3</li>
+</ol>
+
+Mixed Nested List
+<ol>
+  <li>list item 1
+    <ul>
+      <li>additional list item 1</li>
+      <li>additional list item 2</li>
+      <li>additional list item 3</li>
+    </ul>
+  </li>
+  <li>list item 2</li>
+  <li>list item 3</li>
+</ol>
+{% endhighlight %}
+</div>
+
 </div>
 
 <hr>
 
 <div class="section">
-  <h3>BLOCKQUOTES</h3>
+  <h3 class="section-title">BLOCKQUOTES</h3>
 
   <blockquote>
-  This is a blockquote apparently.
+    This is a blockquote apparently.
   </blockquote>
+
+<div class="view-code">
+<a class="view-code-link">View Code</a>
+{% highlight html %}
+<blockquote>
+  This is a blockquote apparently.
+</blockquote>
+{% endhighlight %}
+
 </div>
+</div>
+
+<script>
+$( document ).ready(function() {
+
+  $(".view-code-link").click(function() {
+    $(this).siblings('.highlight').slideToggle();
+  });
+});
+</script>

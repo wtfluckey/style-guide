@@ -163,6 +163,7 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+    background: #f5f5f5;
 }
 
 .page-heading {
@@ -233,4 +234,12 @@
             font-size: 18px;
         }
     }
+}
+
+
+// ALY ADDED STYLES
+
+.no-bullets {
+  list-style-type: none;
+  margin-left: 0;
 }

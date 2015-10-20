@@ -18,3 +18,38 @@
   display: none;
   text-align: left;
 }
+
+.centered {
+  text-align: center;
+}
+
+.color-swatch {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  margin: 0 30px;
+
+  &.blue {
+    background: blue;
+  }
+
+  &.red {
+    background: red;
+  }
+
+  &.yellow {
+    background: yellow;
+  }
+
+  &.green {
+    background: green;
+  }
+
+  &.purple {
+    background: purple;
+  }
+
+  &.orange {
+    background: orange;
+  }
+}

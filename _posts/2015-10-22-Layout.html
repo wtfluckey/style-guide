@@ -25,13 +25,52 @@ meta: this is elephant metadata
 <div class="section">
   <h3>How it works</h3>
   <p>
-  Create rows with <code>.columns</code> and individual columns with a <code>.column</code> class and a fraction class (e.g. <code>.one-half</code> or <code>.one-fourth</code>).
+  Create rows with <code>.row</code> and individual columns with a <code>.column</code> class and a fraction class (e.g. <code>.one-half</code> or <code>.one-fourth</code>).
   </p>
+
+  <div class="container grid-example">
+    <div class="row">
+      <div class="one-fifth column">
+        .one-fifth
+      </div>
+      <div class="four-fifths column">
+        .four-fifths
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="one-fourth column">
+        .one-fourth
+      </div>
+      <div class="three-fourths column">
+        .three-fourths
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+    <div class="row">
+      <div class="one-third column">
+        .one-third
+      </div>
+      <div class="two-thirds column">
+        .two-thirds
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="one-half column">
+        .one-half
+      </div>
+      <div class="one-half column">
+        .one-half
+      </div>
+    </div>
+  </div>
 
 <div class="view-code">
 {% highlight html %}
 <div class="container">
-  <div class="columns">
+  <div class="row">
     <div class="one-fifth column">
       .one-fifth
     </div>
@@ -40,7 +79,7 @@ meta: this is elephant metadata
     </div>
   </div>
 
-  <div class="columns">
+  <div class="row">
     <div class="one-fourth column">
       .one-fourth
     </div>
@@ -49,7 +88,7 @@ meta: this is elephant metadata
     </div>
   </div>
 
-  <div class="columns">
+  <div class="row">
     <div class="one-third column">
       .one-third
     </div>
@@ -58,7 +97,7 @@ meta: this is elephant metadata
     </div>
   </div>
 
-  <div class="columns">
+  <div class="row">
     <div class="one-half column">
       .one-half
     </div>

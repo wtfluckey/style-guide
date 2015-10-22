@@ -85,6 +85,17 @@
   &.orange {
     background: $orange;
   }
+}
 
+.grid-example {
+  .row {
+    margin-bottom: 20px;
+  }
+  .column {
+    border: 1px solid #9854D8;
+    background-color: lighten(#9854D8, 30%);
+    padding: 10px;
+    border-radius: 5px;
+  }
 }
 

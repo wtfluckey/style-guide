@@ -22,3 +22,42 @@
   width: 100%;
   margin: auto;
 }
+
+.row {
+  @include row;
+
+}
+
+.column {
+}
+
+.one-fifth {
+  @include span-columns(2);
+}
+
+.four-fifths {
+  @include span-columns(10);
+  @include omega();
+}
+
+.one-fourth {
+  @include span-columns(3);
+}
+
+.three-fourths {
+  @include span-columns(9);
+  @include omega();
+}
+
+.one-third {
+  @include span-columns(4);
+}
+
+.two-thirds {
+  @include span-columns(8);
+  @include omega();
+}
+
+.one-half {
+  @include span-columns(6);
+}

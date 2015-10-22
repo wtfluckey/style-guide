@@ -1,6 +1,6 @@
 .section {
   margin: 40px 0;
-  background: #fff;
+  background: $white;
   padding: 30px;
 }
 
@@ -9,13 +9,11 @@
   text-align: center;
 }
 
-
 .view-code {
   text-align: center;
 }
 
 .highlight {
-  display: none;
   text-align: left;
 }
 
@@ -36,32 +34,14 @@
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 
-  &.blue {
-    background: #3498db;
-  }
-
-  &.red {
-    background: #e74c3c;
-  }
-
-  &.yellow {
-    background: #f1c40f;
-  }
-
-  &.green {
-    background: #2ecc71;
-  }
-
-  &.purple {
-    background: #8e44ad;
-  }
-
-  &.orange {
-    background: #f39c12;
-  }
-
   .color-swatch-hover {
     display: none;
+  }
+
+  &:hover {
+    .color-swatch-hover {
+      display: inline-block;
+    }
   }
 }
 
@@ -70,14 +50,41 @@
   font-size: 13px;
   padding: 5px 0 5px 10px;
   margin-top: -7px;
-  background: #f7f7f7;
+  background: $lightest-grey;
   border-radius: 6px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  border-bottom: 2px solid #cecece;
+  border-bottom: 2px solid $light-grey;
 
   p {
     margin-bottom: 0;
   }
+}
+
+* {
+  &.blue {
+    background: $blue;
+  }
+
+  &.red {
+    background: $red;
+  }
+
+  &.yellow {
+    background: $yellow;
+  }
+
+  &.green {
+    background: $green;
+  }
+
+  &.purple {
+    background: $purple;
+  }
+
+  &.orange {
+    background: $orange;
+  }
+
 }
 

@@ -6,21 +6,7 @@ author: me
 meta: this is metadata
 ---
 
-# GLOBALS, OBJECTS, MODULES?
-
-## LAYOUT
-- container
-- grid
-
-## TYPOGRAPHY
-- headings
-- paragraphs
-- lists
-- quotes
-
 ## ICONS & IMAGES
-
-## COLORS
 
 ## BUTTONS
 - default
@@ -28,10 +14,17 @@ meta: this is metadata
 - sizes
 
 ## FORMS
+- input
+- textarea
+- select
+- checkbox
+- radio button
 
 ## TABLES
 
 ## ALERTS
+
+## VARIABLES
 
 ## ANIMATIONS
 

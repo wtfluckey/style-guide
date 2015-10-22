@@ -1,0 +1,24 @@
+.no-bullets {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.centered {
+  text-align: center;
+}
+
+// CONTAINER AND GRID
+
+.container {
+  max-width: 980px;
+  width: 100%;
+  margin: auto;
+}

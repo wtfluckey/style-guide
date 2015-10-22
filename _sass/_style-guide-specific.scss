@@ -23,33 +23,61 @@
   text-align: center;
 }
 
-.color-swatch {
-  height: 100px;
-  width: 100px;
+.color-swatch-wrap {
+  width: 120px;
   display: inline-block;
   margin: 0 30px;
+}
+
+.color-swatch {
+  height: 100px;
+  width: 120px;
+  display: inline-block;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 
   &.blue {
-    background: blue;
+    background: #3498db;
   }
 
   &.red {
-    background: red;
+    background: #e74c3c;
   }
 
   &.yellow {
-    background: yellow;
+    background: #f1c40f;
   }
 
   &.green {
-    background: green;
+    background: #2ecc71;
   }
 
   &.purple {
-    background: purple;
+    background: #8e44ad;
   }
 
   &.orange {
-    background: orange;
+    background: #f39c12;
+  }
+
+  .color-swatch-hover {
+    display: none;
   }
 }
+
+.color-swatch-info {
+  text-align: left;
+  font-size: 13px;
+  padding: 5px 0 5px 10px;
+  margin-top: -7px;
+  background: #f7f7f7;
+  border-radius: 6px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom: 2px solid #cecece;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+

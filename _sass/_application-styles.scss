@@ -79,6 +79,7 @@
   line-height: $base-line-height;
   font-weight: 100;
   text-align: center;
+  outline: none;
   @include transition(background .2s);
 
   &:hover {
@@ -87,11 +88,27 @@
     background: darken($color, 5%);
     @include transition(background .2s);
   }
+
+  &:active {
+    background: darken($color, 10%);
+    @include transition(background 0s);
+  }
 }
 
 .btn {
   &.default {
     @include button($blue);
+  }
+
+  &.disabled {
+    @include button($light-grey);
+    pointer-events: none;
+    color: $grey;
+    cursor: default;
+    &:hover {
+      color: $grey;
+      background: $light-grey;
+    }
   }
 
   &.orange {

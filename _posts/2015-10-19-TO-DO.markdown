@@ -8,11 +8,6 @@ meta: this is metadata
 
 ## ICONS & IMAGES
 
-## BUTTONS
-- default
-- disabled
-- sizes
-
 ## FORMS
 - input
 - textarea
@@ -23,8 +18,6 @@ meta: this is metadata
 ## TABLES
 
 ## ALERTS
-
-## VARIABLES
 
 ## ANIMATIONS
 

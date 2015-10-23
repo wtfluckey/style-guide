@@ -25,11 +25,8 @@
 
 .row {
   @include row;
-
 }
 
-.column {
-}
 
 .one-fifth {
   @include span-columns(2);
@@ -60,4 +57,56 @@
 
 .one-half {
   @include span-columns(6);
+}
+
+// END CONTAINER AND GRID
+
+
+// BUTTONS
+//
+
+@mixin button($color) {
+  display: inline-block;
+  background: $color;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 15px;
+  border: none;
+  color: $white;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: $base-font-family;
+  line-height: $base-line-height;
+  font-weight: 100;
+  text-align: center;
+  @include transition(background .2s);
+
+  &:hover {
+    text-decoration: none;
+    color: white;
+    background: darken($color, 5%);
+    @include transition(background .2s);
+  }
+}
+
+.btn {
+  &.default {
+    @include button($blue);
+  }
+
+  &.orange {
+    @include button($orange);
+  }
+
+  &.purple {
+    @include button($purple);
+  }
+
+  &.green {
+    @include button($green);
+  }
+
+  &.red {
+    @include button($red);
+  }
 }

@@ -109,4 +109,12 @@
   &.red {
     @include button($red);
   }
+
+  &.large {
+    padding: 20px 40px;
+  }
+
+  &.small {
+    padding: 5px 15px;
+  }
 }

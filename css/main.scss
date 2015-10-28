@@ -47,13 +47,7 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "normalize",
-        "bourbon/bourbon.scss",
-        "neat/neat.scss",
-        "base",
-        "layout",
-        "variables",
+        "../src/scss/style-guide.scss",
         "syntax-highlighting",
-        "style-guide-specific",
-        "application-styles"
+        "style-guide-specific"
 ;

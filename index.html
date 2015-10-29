@@ -6,17 +6,27 @@ layout: default
 
   <div class="row">
     <div class="column one-fourth">
-      <ul>
-        {% for post in site.posts %}
-          <li><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
-        {% endfor %}
+      <ul class="sidebar-list">
+        <li><a href="#how-to-use">How to use</a></li>
+        <li><a href="#foundation">Foundation</a></li>
+        <li><a href="#layout">Layout</a></li>
+        <li><a href="#typography">Typography</a></li>
+        <li><a href="#variables">Variables</a></li>
+        <li><a href="#colors">Colors</a></li>
+        <li><a href="#buttons">Buttons</a></li>
+        <li><a href="#inputs">Inputs</a></li>
       </ul>
     </div>
 
-    <div class="column three-fourths">
-      {% for post in site.posts %}
-        {{ post.content }}
-      {% endfor %}
+    <div class="column three-fourths content">
+      {% include how-to-use.html %}
+      {% include foundation.html %}
+      {% include layout.html %}
+      {% include typography.html %}
+      {% include variables.html %}
+      {% include colors.html %}
+      {% include buttons.html %}
+      {% include inputs.html %}
     </div>
   </div>
 

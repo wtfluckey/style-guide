@@ -1,0 +1,64 @@
+<a id="variables"></a>
+<h2 class="section-title">Variables</h2>
+<p>
+  We are using scss variables to manage common styles like colors, font-families and sizes, and layout width. 
+  If you find yourself needing to change the value of a variable, please see Aly first. These are located in <code>_variables.scss</code>.
+</p>
+
+<div class="section">
+  <h3>Usage</h3>
+
+  <div class="view-code">
+{% highlight scss %}
+.class {
+  color: $white;
+  background-color: $blue;
+  width: $content-width;
+}
+{% endhighlight %}
+  </div>
+</div>
+
+<div class="section">
+  <h3>
+    Color variables
+  </h3>
+
+  <div class="view-code">
+{% highlight scss %}
+$white: #fff;
+$black: #333;
+
+$blue: #02BCDD;
+$red: #e74c3c;
+$yellow: #f1c40f;
+$green: #2ecc71;
+$purple: #8e44ad;
+$orange: #f39c12;
+{% endhighlight %}
+  </div>
+</div>
+
+<div class="section">
+  <h3>Font variables</h3>
+
+  <div class="view-code">
+{% highlight scss %}
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-line-height: 1.5;
+
+{% endhighlight %}
+  </div>
+</div>
+
+<div class="section">
+  <h3>Layout variables</h3>
+
+  <div class="view-code">
+{% highlight scss %}
+$content-width:    980px;
+{% endhighlight %}
+  </div>
+</div>
+

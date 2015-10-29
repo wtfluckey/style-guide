@@ -112,4 +112,10 @@
   outline: none;
 }
 
+nav {
+  a.active {
+    color: red;
+  }
+}
+
 

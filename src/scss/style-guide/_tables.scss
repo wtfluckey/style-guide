@@ -85,22 +85,6 @@
       &:first-child {
         border-left: none;
       }
-
-      button {
-        display: inline-block;
-        font-size: 0.7em;
-        line-height: $base-line-height;
-        margin-bottom: 0.3em;
-        margin-right: 0.5em;
-        outline: none;
-        padding: 0.3em 1em;
-        width: 100%;
-
-        @include media($medium-screen) {
-          margin-bottom: 0;
-          width: auto;
-        }
-      }
     }
   }
 }
@@ -156,22 +140,6 @@
       border-top: 1px solid $table-border-color;
       line-height: $base-line-height;
       padding: $table-padding;
-
-      button {
-        display: inline-block;
-        font-size: .7em;
-        line-height: $base-line-height;
-        margin-bottom: .3em;
-        margin-right: 0.5em;
-        outline: none;
-        padding: .3em 1em;
-        width: 100%;
-
-        @include media($medium-screen) {
-          margin-bottom: 0;
-          width: auto;
-        }
-      }
     }
   }
 }

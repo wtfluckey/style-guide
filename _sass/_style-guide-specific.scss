@@ -112,6 +112,13 @@
   outline: none;
 }
 
+.site-header {
+  .github-link {
+    padding-top: 15px;
+    padding-right: 25px;
+  }
+}
+
 nav {
   a {
     display: inline-block;

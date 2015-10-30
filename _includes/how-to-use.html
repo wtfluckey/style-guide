@@ -2,10 +2,10 @@
 <h2 class="section-title">How to use</h2>
 
 <div class="section">
-  <p><a href="https://github.com/wtfluckey/style-guide" target="blank">View on Github</a></p>
+  <h2>Using Bower (such as with ember-cli)</h2>
   <p>Install the style guide into your project with Bower:</p>
 
-  <p><code>bower install wtfluckey/style-guide</code></p>
+  <p><code>$ bower install wtfluckey/style-guide --save</code></p>
 
   <p>Then <code>@import</code> the style guide SCSS into your application's SCSS manifest:</p>
 
@@ -13,4 +13,59 @@
 // application.scss
 @import "bower_components/style-guide/src/scss/style-guide.scss";
 {% endhighlight %}
+
+  <p>Start up your Ember server and verify that the style guide is loaded in your CSS file!</p>
+  <hr>
+</div>
+
+<div class="section">
+  <h2>Using bower-rails (with Rails apps)</h2>
+  <p>Make sure that you have Bower installed on your system via npm:
+
+{% highlight bash %}
+npm install -g bower
+{% endhighlight %}
+
+  <p>Add the <code>bower-rails</code> gem to your <code>Gemfile</code>:</p>
+
+{% highlight ruby %}
+// Gemfile
+gem 'bower-rails'
+{% endhighlight %}
+
+  <p>Install the gem:</p>
+
+{% highlight bash %}
+$ bundle install
+{% endhighlight %}
+
+  <p>Create a <code>Bowerfile</code> in the root of your Rails project:</p>
+
+{% highlight ruby %}
+// Bowerfile
+asset 'style-guide', 'git@github.com:wtfluckey/style-guide'
+{% endhighlight %}
+
+  <p>Run the <code>bower-rails</code> rake task to download the style guide to the Rails <code>/vendor/bower_components/</code> directory.</p>
+
+{% highlight ruby %}
+// config/application.rb
+config.assets.paths << Rails.root.join("vendor","assets","bower_components")
+{% endhighlight %}
+
+  <p>Since we're using SCSS, make sure your <code>application.css</code> manifest has been renamed to <code>application.scss</code>:</p>
+
+{% highlight bash %}
+$ git mv app/assets/stylesheets/application.{css,scss}
+{% endhighlight %}
+
+  <p>Delete the default Rails asset pipeline manifest from the <code>application.scss</code> file and replace it with a SCSS import of the style guide (you can use similar statements to reimport any other SCSS files that the manifest was requiring):</p>
+
+{% highlight scss %}
+// app/assets/stylesheets/application.scss
+@import "style-guide/src/scss/style-guide.scss";
+{% endhighlight %}
+
+  <p>Now start up your Rails server and verify that the style guide is loaded in your CSS file!</p>
+
 </div>

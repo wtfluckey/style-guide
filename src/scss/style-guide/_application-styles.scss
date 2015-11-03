@@ -169,9 +169,7 @@
     &:focus {
       border-color: $blue;
       @include transition(border, .3s);
-      height: 70px;
     }
-
   }
 
   input[type=radio],

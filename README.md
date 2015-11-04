@@ -42,9 +42,16 @@ $ bundle install
 
 Create a `Bowerfile` in the root of your Rails project:
 
+Using HTTP:
 ```
 // Bowerfile
 asset 'style-guide', 'https://github.com/wtfluckey/style-guide.git'
+```
+
+Using SSH:
+```
+// Bowerfile
+asset 'style-guide', 'git@github.com:wtfluckey/style-guide.git'
 ```
 
 Run the `bower-rails` rake task to download the style guide to the Rails `/vendor/bower_components/` directory.

@@ -1,0 +1,56 @@
+.tron {
+
+  font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif;
+
+  background: #091825;
+
+  .content {
+    margin-left: 150px;
+  }
+
+  .section-title {
+    color: $blue;
+  }
+
+  p {
+    color: $blue;
+  }
+
+  code {
+    color: $purple;
+  }
+
+  .section {
+    background: #091825;
+    color: $blue;
+    border: 1px solid darken($blue, 30%);
+
+    code {
+      color: $purple;
+    }
+  }
+
+
+  // BUTTONS
+  @mixin tron-button($color) {
+    @include button($color);
+    font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif;
+
+    background: none;
+    border: 3px solid $color;
+    box-shadow: 0px 0px 10px $color, inset 0px 0px 20px $color;
+    color: $color;
+    text-transform: uppercase;
+    @include transition(background, color, .4s);
+
+    &:hover {
+      background: $color;
+      color: $white;
+      @include transition(background, color, .4s);
+    }
+  }
+
+  .btn {
+    @include tron-button($blue);
+  }
+}
